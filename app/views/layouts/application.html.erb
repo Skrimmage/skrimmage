@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skrimmage</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <h1><%= link_to 'Skrimmage', root_path %></h1>
+            </div>
+          </div>
+          <div class="level-right">
+            <p class="level-item">
+              <a href="https://twitter.com/SkrimmageSports" target="_blank">
+                Twitter
+              </a>
+            </p>
+            <p class="level-item">
+              <a href="https://github.com/Skrimmage" target="_blank">
+                Github
+              </a>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        Copyright © 2019 Skrimmage. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

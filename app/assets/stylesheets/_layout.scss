@@ -1,0 +1,19 @@
+body {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  height:100vh;
+}
+.header {
+  background-color: $skrim-green;
+  padding:2rem 1.5rem;
+
+  a {
+    color: white;
+  }
+}
+.section {
+  display:flex;
+  flex:1 0 auto;
+}
+  
