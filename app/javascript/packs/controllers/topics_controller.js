@@ -13,7 +13,6 @@ export default class extends Controller {
       received( data ) {
         console.log('received info');
         console.log(data);
-        console.log(thisController);
         thisController.topicsTarget.innerHTML = data['topics'];
       }
     });

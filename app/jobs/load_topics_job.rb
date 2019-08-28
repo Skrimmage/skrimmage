@@ -9,7 +9,7 @@ class LoadTopicsJob < ApplicationJob
     url = 'https://forum.skrimmage.com/latest.rss'
     open(url) do |rss|
       feed = RSS::Parser.parse(rss)
-      feed.items.each do |item|
+      feed.items.first(5).each do |item|
         topics.append(item)
       end
     end

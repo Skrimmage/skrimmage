@@ -1,1 +1,5 @@
-<p>hello</p>
+<ul>
+<% topics.each do |topic| %>
+    <li><%= link_to topic.title, topic.link %></li>
+<% end %>
+</ul>
